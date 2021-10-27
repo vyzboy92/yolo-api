@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  yolo:
+    build: ./
+    container_name: yolo
+    privileged: true
+    volumes:
+      - ./:/obj-demo
+    ports:
+      - "4232:4232"
